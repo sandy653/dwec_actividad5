@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript</title>
+    <script>
+         
+         function onlyUnique(value, index, self) { 
+          return self.indexOf(value) === index;
+}   
+  
+     var palabra =['sandra','linda','patricia','sandra','linda','anita']; 
+     palabra.reverse() ;    
+     var unique = palabra.filter( onlyUnique ); 
+     document.write(unique)
+     /*action.js file
+     const setWords=new Set();
+     var arrayWords=[];
+//
+     var word=prompt("Write a word ,or leave it empty if you want to finish");
+     while(word !=null && word!=""){
+       setWords.add(word);
+
+       word=prompt("Write a word ,or leave it empty if you want to finish");
+     //}
+     //
+     arrayWords=[...setWords];
+     //
+     arrayWords.sort((a,b)=>(-a.localeCompare(b,"es")));
+     //
+     arrayWords.forEach(function(w){
+     document.write(`<p>${w}</p>`);,
+     }
+     /*  se crea un array donde no sé repitan los valores y un array vacio.
+         si el array es diferente de null y difrente de vacio añade el elemento
+         array set.
+         arraywords lo hace igual a setwords.  la función sort recibe 2 parámetros (a,b)  y los compara 
+         con localcompare y devuelve -1 ordena antes.  después muestra en pantalla el array
+
+
+         el ejercicio que hay era el que estaba antes*/
+ 
+ 
+    
+</body>
+</html> 

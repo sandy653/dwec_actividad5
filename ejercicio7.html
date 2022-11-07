@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript</title>
+    <script>
+        var cadena = prompt('Introduzca un texto o palabra por favor');
+        cadena = cadena.toLowerCase().replace(/\s/g,"");
+        var reves = cadena.split("").reverse().join("");
+
+        function palindromo (cadena) {
+          if(cadena == reves){
+             alert('El texto o palabra introducido es un palindromo');
+            }
+          else{
+              alert('El texto o palabra introducido NO es un palindromo');
+            }
+        }
+        palindromo (cadena);
+
+  </script>
+</head>
+<body>
+    
+</body>
+</html>

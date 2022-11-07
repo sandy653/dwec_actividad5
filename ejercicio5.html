@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript</title>
+    <script>
+       function mapearPalabras() {
+        let mapaDePalabras = new Map();
+        function agregarPalabrasAlMapa(palabra) {
+            let contador=1;
+            const palabraYaExiste = mapaDePalabras.get(palabra);
+
+            if (palabraYaExiste) {
+               contador = palabraYaExiste + 1;
+               mapaDePalabras.set(palabra, contador);            
+            }
+    
+           mapaDePalabras.set(palabra, contador);
+           document.write(`La palabra ${palabra} se ha ingresado ${contador} veces`);
+      }
+
+     while (true) {
+     let palabra = window.prompt('Escribe palabras');
+     if (!palabra) {
+      break;
+    }
+  
+    agregarPalabrasAlMapa(palabra);
+ } 
+}
+ mapearPalabras();
+ </script>
+</head>
+<body>
+    
+</body>
+</html>
